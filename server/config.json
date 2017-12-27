@@ -1,0 +1,6 @@
+{
+	"connectionString":"mongodb://localhost:27017/learnitor",
+	"secret":"learnitor",
+	"contactEmail":"shrinivas.kalangutkar@gmail.com",
+	"installed":true
+}

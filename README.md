@@ -1,6 +1,3 @@
-# learnitor
-Online tutorials
-
 ======== Deploying the node on your localsystem. ==============
 
 Note : This module covers only diplay part of the tutorials , the admin seection is not present in the repository.
@@ -18,3 +15,4 @@ Dependencies : Nodejs, Expressjs, Angularjs and Mongodb.
 5)Type command node server.js
 
 6) Go to browser and access http://localhost:3000
+

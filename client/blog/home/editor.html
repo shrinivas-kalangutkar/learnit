@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/javascript">
+#css {  
+    width: 620px;
+    border-bottom: 2px;
+    border-style: inset;
+    border-width: 7px;
+ }
+</style>
+</head>
+<body>
+	<header>
+	<!-- 	<h1><a href="/">Learnitor</a></h1> -->
+	</header>
+
+	<div class="btn-group" style="margin-left:11px;">
+	<!--  <img alt="learnit" src="images_logo.jpg"> -->
+	<h2>Learnitor</h2>
+    <button style="float:right;margin-right:723px;margin-left:8px;" ng-click="promptReset() | trackEvent:'Plunk':'Reset':'Toolbar'" class="btn btn-success ng-scope" tooltip-placement="bottom" tooltip="Create a new bunddle">
+      <i class="icon-file"></i><span class="shrink">Run</span>
+    </button>
+	
+    <button style="float:right; data-toggle="dropdown" class="btn btn-success dropdown-toggle ng-scope" tooltip-placement="bottom" tooltip="Create a new bundle from a template"><span class="caret"></span>Clear</button>    
+    </div>
+	<section id="css-container" class="editor page">
+	<pre id="css" style="width:620px;border-bottom: 2px;border-style: inset;border-width:7px;margin-top:44px;float:right;margin:24px 15px 8px 7px;height:600px;" spellcheck="false" class="language-css" contenteditable>
+	   /**
+	   * The first commented line is your Learnitor's edit mode
+	   */
+		background: #f06;
+		background: linear-gradient(45deg, #f06, yellow);
+		min-height: 100%;
+	</pre>
+	</section>
+	<section class="editor page">
+	<pre id="css" style="width: 620px;border-bottom: 2px;border-style: inset;border-width:7px;margin-top:25px;height:600px;margin-left: 11px;" spellcheck="false" class="language-css" contenteditable>
+	   /**
+	   * The first commented line is your Learnitor's execute mode
+	   */
+		background: #f06;
+		background: linear-gradient(45deg, #f06, yellow);
+		min-height: 100%;
+	</pre>
+	</section>
+	<!-- <section id="javascript-container" class="editor page"><pre id="javascript" spellcheck="false" class="language-javascript" contenteditable>// alert('Hello world!');</pre></section> -->
+</body>
+</html>

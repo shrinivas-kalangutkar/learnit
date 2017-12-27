@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <base href="/" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/_content/images/logo.png" type="image/png" />
+    <link rel="icon" href="/_content/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/_content/stylesite.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic' rel='stylesheet'>
+   
+    <style>
+        /* fonts & icons */
+        <%- include('_content/fonts/montserrat.css') %>
+		<%- include('_content/icomoon/style.css') %>
+      
+
+        /* custom */
+        <%- include('_dist/app.css') %>
+		
+		.navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		background-color: #98AFC7;
+		color: #FFFFFF;
+	    }
+    </style>
+
+   
+</head>
+<body style="overflow:auto;">
+    <!-- nav -->
+<header>
+   <div class="navbar nav-main">
+    <h1 class="logo">
+     Learnitor
+    </h1>
+      
+	<nav class="navbar navbar-inverse" style="background-color: #60739e;margin-bottom:0px !important;margin-right: 84px;    padding: 0px;">
+      <div class="container-fluid">
+		<ul class="nav navbar-nav">
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">HTML 5</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">CSS 3</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">Angular Js</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">Node Js</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">Mongo DB</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">React Js</a></li>
+		   <li><a style="padding:7px 9px 7px 50px;"   href="#">Amber Js</a></li>
+		</ul>
+	  </div>
+    </nav>   	  
+        <!--  <div class="submenu-item sub-main-menu" id="top-sub-menu"></div>  -->         
+   </div>
+    
+</header>
+<div style="width:21% !important;" class="col-md-3">
+<aside class="sidebar">
+<ul>
+   <li class="heading" style="background-color: #60739e;">Angular Js - Tutorials</li>
+</ul>
+  <div>
+  <div class="panel-group" id="accordionMenu" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Expression
+        </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Models
+        </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+            <li><a href="#">item 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Data binding
+        </a>
+      </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+            <li><a href="#">item 3</a></li>
+            <li><a href="#">item 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Controllers
+        </a>
+      </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Scopes
+        </a>
+      </h4>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Filters
+        </a>
+      </h4>
+      </div>
+      <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Services
+        </a>
+      </h4>
+      </div>
+      <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	 <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+          HTTP
+        </a>
+      </h4>
+      </div>
+      <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionMenu" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          HTTP
+        </a>
+      </h4>
+      </div>
+      <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+        <div class="panel-body">
+          <ul class="nav">
+            <li><a href="#">item 1</a></li>
+            <li><a href="#">item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</aside>
+</div>
+
+
+
+<!-- BINDING STARTS HERE -->
+
+    <!-- main -->
+    <main ui-view>
+        <% if(locals.templateUrl) { %>
+            <div ng-non-bindable>
+                <%- include(locals.templateUrl) %>
+            </div>
+        <% } %>
+	</main>
+
+    <!-- footer -->
+    
+
+ 
+    
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  
+
+    <!-- angular -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+
+    <!-- app -->
+    <script src="/_dist/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<div class="post-list">
+
+<div class="row" style="margin-right:0px !important">
+<div style="padding-top:12px;" class="content">
+<div style="width:75%;margin-left:20px;border-style: groove;border: 1px solid #ddd;" class="col-md-7">
+<h2>Angular JS</h2>
+
+<div class="clearer"></div>
+
+<p>Adapters are abstract classes for receiving various events. The methods in these classes are empty. These classes exists as convenience for creating listener objects.</p>
+<h2>Angular JS Directives:</h2>
+<p>Following is the list of commonly used adapters while listening GUI events in AWT.</p>
+<table class="table table-bordered">
+<tr></tr>
+ <% posts.forEach(function(post) { %>
+<tr><td>
+	<p><a href="<%= post.url %>"><%= post.title %></a></p>
+	<p><%= post.summary %></p>
+</td></tr>
+ <% }) %>
+</table>
+</div>
+</div>
+</div>
+
+<% if(locals.pager && locals.pager.endPage > 1) { %>
+    <div class="post-pager">
+        <ul class="pagination">
+            <% if(locals.pager.currentPage > 1) { %>
+                <li class="first"><a href="?page=1">First</a></li>
+                <li class="previous"><a href="?page=<%= locals.pager.currentPage - 1 %>">Previous</a></li>
+            <% } else { %>
+                <li class="first disabled"><a>First</a></li>
+                <li class="previous disabled"><a>Previous</a></li>
+            <% } %>
+
+            <% for(var page = locals.pager.startPage; page <= locals.pager.endPage; page++) { %>
+                <li class="<%= page === locals.pager.currentPage ? 'active' : '' %>">
+                    <a href="?page=<%= page %>"><%= page %></a>
+                </li>
+            <% } %>
+
+            <% if(locals.pager.currentPage < locals.pager.totalPages) { %>
+                <li class="next"><a href="?page=<%= locals.pager.currentPage + 1 %>">Next</a></li>
+                <li class="last"><a href="?page=<%= locals.pager.totalPages %>">Last</a></li>
+            <% } else { %>
+                <li class="next disabled"><a>Next</a></li>
+                <li class="last disabled"><a>Last</a></li>
+            <% } %>
+        </ul>
+    </div>
+<% } %>
